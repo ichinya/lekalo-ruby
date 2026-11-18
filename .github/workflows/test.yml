@@ -19,4 +19,11 @@ jobs:
         with:
           node-version: 24
           package-manager-cache: false
-      - run: node --test
+      - run: node --test test/discovery.test.cjs
+  host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ichinya/lekalo-adapter-sdk/.github/actions/package-contract@5dccba0f460834e767c63ce89750a6611fb7431a
+        with:
+          host: 9eb07ce8f21f96a9a160d382ac6280b9fa0fbcbe
