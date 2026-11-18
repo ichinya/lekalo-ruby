@@ -1,0 +1,13 @@
+{
+  "schema": "lekalo/package/v1",
+  "id": "lekalo-ruby",
+  "version": "0.1.0",
+  "kind": "runtime",
+  "command": [
+    "node",
+    "bin/discovery.cjs"
+  ],
+  "files": [
+    "bin/discovery.cjs"
+  ]
+}
